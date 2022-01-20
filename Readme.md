@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Volha Yermak](https://up.htmlacademy.ru/htmlcss/33/user/315091).
-* Наставник: `Неизвестно`.
+* Наставник: [Ольга Вадясова] (https://htmlacademy.ru/profile/ad0v0).
 
 ---
 
