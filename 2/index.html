@@ -7,32 +7,42 @@
 </head>
   <body>
     <header class="page-header">
-      <a href="#">Device logo header</a>
+      <a href="#">
+        <img src="#" alt="Логотип Девайс">
+      </a>
       <div class="search">
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <form action="https://echo.htmlacademy.ru/" method="get">
           <label for="search-field">Текст поиска</label>
           <input type="text" id="search-field" name="search-text">
           <button type="submit">Найти</button>
         </form>
       </div>
       <div class="user-navigation">
-        <a class="enter" href="#">Войти</a>
-        <a class="compare" href="#">Сравнить</a>
-        <a class="bag" href="#">Корзина</a>
+        <ul class="user-navigation-list">
+          <li>
+            <a class="login" href="#">Войти</a>
+          </li>
+          <li>
+            <a class="compare" href="#">Сравнить</a>
+          </li>
+          <li>
+            <a class="cart" href="#">Корзина</a>
+          </li>
+        </ul>
       </div>
       <nav class="header-navigation">
-        <ul class="site-navigation">
+        <ul class="header-navigation-list">
           <li>
-            <a class="navigation-link" href="#">Каталог товаров</a>
+            <a class="header-navigation-link" href="#">Каталог товаров</a>
           </li>
           <li>
-            <a class="navigation-link" href="#">Доставка</a>
+            <a class="header-navigation-link" href="#">Доставка</a>
           </li>
           <li>
-            <a class="navigation-link" href="#">Гарантия</a>
+            <a class="header-navigation-link" href="#">Гарантия</a>
           </li>
           <li>
-            <a class="navigation-link" href="#">Контакты</a>
+            <a class="header-navigation-link" href="#">Контакты</a>
           </li>
         </ul>
       </nav>
@@ -41,9 +51,9 @@
     <main>
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
       <section class="slider">
-        <h2 class="visually-hidden">Слайдер</h2>
+        <h2 class="visually-hidden">Промо товаров</h2>
         <section class="slider-page">
-          <h3 class="visually-hidden">Страница слайдера</h3>
+          <h3 class="visually-hidden">Квадрокоптер</h3>
           <img src="#" alt="Бело-черный квадрокоптер с лазером из камеры">
           <p>Порхает как бабочка, жалит как пчела!</p>
           <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
@@ -61,7 +71,7 @@
           </table>
         </section>
         <section class="slider-page">
-          <h3 class="visually-hidden">Страница слайдера</h3>
+          <h3 class="visually-hidden">Фитнес-браслет</h3>
           <img src="#" alt="Черный фитнес-браслет с надписью на экране:
            Я вижу, что ты снова ешь :(">
           <p>Худеем правильно!</p>
@@ -76,7 +86,7 @@
           </table>
         </section>
         <section class="slider-page">
-          <h3 class="visually-hidden">Страница слайдера</h3>
+          <h3 class="visually-hidden">Селфи-палки</h3>
           <img src="#" alt="Три селфи-палки с вариантами использования штатива">
           <p>Делай селфи, как Бен Стиллер!</p>
           <p>Самая длинная палка для селфи доступна в нашем магазине.
@@ -99,12 +109,24 @@
       <section class="categories">
         <h2 class="visually-hidden">Категории каталога</h2>
         <ul class="categories-list">
-          <li><a class="categories-item" href="#">Виртуальная реальность</a></li>
-          <li><a class="categories-item" href="catalog.html">Моноподы для селфи</a></li>
-          <li><a class="categories-item" href="#">Экшен-камеры</a></li>
-          <li><a class="categories-item" href="#">Фитнес-браслеты</a></li>
-          <li><a class="categories-item" href="#">Умные браслеты</a></li>
-          <li><a class="categories-item" href="#">Квадрокоптеры</a></li>
+          <li>
+            <a class="categories-item" href="#">Виртуальная реальность</a>
+          </li>
+          <li>
+            <a class="categories-item" href="catalog.html">Моноподы для селфи</a>
+          </li>
+          <li>
+            <a class="categories-item" href="#">Экшен-камеры</a>
+          </li>
+          <li>
+            <a class="categories-item" href="#">Фитнес-браслеты</a>
+          </li>
+          <li>
+            <a class="categories-item" href="#">Умные браслеты</a>
+          </li>
+          <li>
+            <a class="categories-item" href="#">Квадрокоптеры</a>
+          </li>
         </ul>
       </section>
       <section class="advantages">
@@ -130,9 +152,9 @@
         <h2 class="visually-hidden">Информация</h2>
         <section class="info-about-us">
           <h3>О нас</h3>
-          <p>Огромный выбор гаджетов не оставит равнодушным гика,<br>
+          <p>Огромный выбор гаджетов не оставит равнодушным гика,
              который есть в каждом из нас.</p>
-          <p>Мы можем доставить ваш товар в самые отдалённые <br>
+          <p>Мы можем доставить ваш товар в самые отдалённые
              уголки России транспортными компаниями:</p>
           <ul class="delivery-company-list">
             <li>Меловые линии</li>
@@ -143,24 +165,25 @@
         </section>
         <section class="info-contacts">
           <h3>Контакты</h3>
-          <p>Вы можете забрать товар сами, заехав в наш офис. <br>
+          <p>Вы можете забрать товар сами, заехав в наш офис.
             Заодно сможете проверить работоспособность покупки.</p>
           <span>Интернет-магазин "Девайс"</span>
           <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
           <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
           <span>Время работы</span>
-          <p>пн—пт: с 10:00 до 22:00 <br>
-            сб—вс: с 10:00 до 19:00</p>
+          <p>пн—пт: с 10:00 до 22:00
+             сб—вс: с 10:00 до 19:00</p>
           <a href="#">Напишите нам</a>
         </section>
       </section>
       <section class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
-        <p>Еженедельный дайджест с обзорами новинок,<br>
-          длительными тест-драйвами, распаковками, а также акции, <br>
+        <p>Еженедельный дайджест с обзорами новинок,
+          длительными тест-драйвами, распаковками, а также акции,
           спецпредложения и вот это вот всё.</p>
         <form action="https://echo.htmlacademy.ru/" method="post">
-          <input type="email" placeholder="Ваш E-mail">
+          <label class="visually-hidden" for="email-field">Ваш E-mail</label>
+          <input type="email" id="email-field" placeholder="Ваш E-mail">
           <button type="submit">Подписаться</button>
         </form>
         <span>Это бесплатно</span>
@@ -168,14 +191,22 @@
     </main>
 
     <footer class="page-footer">
-      <a href="#">Device logo footer</a>
+      <a href="#">
+        <img src="#" alt="Логотип Девайс">
+      </a>
       <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
       <section class="footer-navigation">
-        <h2 class="visually-hidden">Навигация</h2>
-        <ul class="navigation footer-navigation">
-          <li><a class="footer-navigation-link" href="#">Доставка</a></li>
-          <li><a class="footer-navigation-link" href="#">Гарантия</a></li>
-          <li><a class="footer-navigation-link" href="#">Контакты</a></li>
+        <h2 class="visually-hidden">Дополнительная навигация</h2>
+        <ul class="navigation footer-navigation-list">
+          <li>
+            <a class="footer-navigation-link" href="#">Доставка</a>
+          </li>
+          <li>
+            <a class="footer-navigation-link" href="#">Гарантия</a>
+          </li>
+          <li>
+            <a class="footer-navigation-link" href="#">Контакты</a>
+          </li>
         </ul>
       </section>
       <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
