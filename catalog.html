@@ -106,51 +106,74 @@
               <input type="radio" id="bluetooth-no" name="dont-have-bluetooth" value="dont-have-bluetooth">
             </fieldset>
 
-            <label for="show-results">Показать</label>
-            <input type="submit" id="show-results">
+            <button  type="submit">Показать</button>
           </form>
         </section>
 
         <div class="sort">
           <span>Сортировка:</span>
-          <select name="sort-by">
-            <option value="popular">Популярное</option>
-          </select>
+          <div class="sort-by">
+            <select>
+              <option value="popular">Популярное</option>
+            </select>
+          </div>
 
-          <section class="cards">
+          <ul class="sort-priority-link">
+            <li><button type="button"><span class="visually-hidden">По возрастанию</span></button></li>
+            <li><button type="button"><span class="visually-hidden">По убыванию</span></button></li>
+          </ul>
+
+          <section class="catalog">
             <h2>Карточки товаров</h2>
-            <section class="card-item">
-              <h3 class="visually-hidden">Любительская селфи палка</h3>
-              <img src="#" alt="Селфи-палка с телефоном">
-              <p>Любительская селфи палка</p>
-              <span>500 ₽</span>
-            </section>
-            <section class="card-item">
-              <h3 class="visually-hidden">Профессиональная селфи-палка</h3>
-              <img src="#" alt="Черная навороченная селфи-палка">
-              <p>Профессиональная селфи-палка</p>
-              <span>1 500 ₽</span>
-            </section>
-            <section class="card-item">
-              <h3 class="visually-hidden">Непотопляемая селфи палка</h3>
-              <img src="#" alt="Селфи-палка для съемки под водой">
-              <p>Непотопляемая селфи палка</p>
-              <span>2 500 ₽</span>
-            </section>
-            <section class="card-item">
-              <h3 class="visually-hidden">Селфи-палка "Следуй за мной"</h3>
-              <img src="#" alt="Искусственная рука с прикрепленной к ней держателем для телефона">
-              <p>Селфи-палка "Следуй за мной"</p>
-              <span>1 500 ₽</span>
-            </section>
+            <ul class="catalog-list">
+              <li class="catalog-item">
+                <article class="product">
+                  <h3 class="visually-hidden">Любительская селфи палка</h3>
+                  <img src="#" alt="Селфи-палка с телефоном">
+                  <p>Любительская селфи палка</p>
+                  <span>500 ₽</span>
+                </article>
+              </li>
+              <li class="catalog-item">
+                <article class="product">
+                  <h3 class="visually-hidden">Профессиональная селфи-палка</h3>
+                  <img src="#" alt="Черная навороченная селфи-палка">
+                  <p>Профессиональная селфи-палка</p>
+                  <span>1 500 ₽</span>
+                </article>
+              </li>
+              <li class="catalog-item">
+                <article class="product">
+                  <h3 class="visually-hidden">Непотопляемая селфи палка</h3>
+                  <img src="#" alt="Селфи-палка для съемки под водой">
+                  <p>Непотопляемая селфи палка</p>
+                  <span>2 500 ₽</span>
+                </article>
+              </li>
+              <li class="catalog-item">
+                <article class="product">
+                  <h3 class="visually-hidden">Селфи-палка "Следуй за мной"</h3>
+                  <img src="#" alt="Искусственная рука с прикрепленной к ней держателем для телефона">
+                  <p>Селфи-палка "Следуй за мной"</p>
+                  <span>1 500 ₽</span>
+                </article>
+              </li>
+            </ul>
           </section>
 
-          <div class="download-more">
-            <a href="#" class="download-link">Загрузить ещё</a>
+          <div class="show-more">
+            <a href="#" class="show-link">Загрузить ещё</a>
           </div>
 
           <div class="pagination">
             <a href="#" class="prev">Назад</a>
+            <ol class="pagination-numbers">
+              <li><a href="#" class="pagination-page"><span>1</span></a></li>
+              <li><a href="#" class="pagination-page"><span>2</span></a></li>
+              <li><a href="#" class="pagination-page"><span>3</span></a></li>
+              <li><a href="#" class="pagination-page"><span>...</span></a></li>
+              <li><a href="#" class="pagination-page"><span>15</span></a></li>
+            </ol>
             <a href="#" class="next">Вперёд</a>
           </div>
         </div>
@@ -178,10 +201,12 @@
       <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <a class="social" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a>
-        <a class="social" href="https://www.instagram.com/htmlacademy/"><span class="visually-hidden">Instagram</span></a>
-        <a class="social" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Twitter</span></a>
-      </section>
+        <ul class="social-list">
+          <li><a class="social-link" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="social-link" href="https://www.instagram.com/htmlacademy/"><span class="visually-hidden">Instagram</span></a></li>
+          <li><a class="social-link" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Twitter</span></a></li>
+        </ul>
+        </section>
       <a href="https://htmlacademy.ru/">
         <img src="#" alt="HTML Academy logo">
       </a>
