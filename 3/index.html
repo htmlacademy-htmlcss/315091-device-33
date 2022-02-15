@@ -141,13 +141,46 @@
          <p>
           Мы с удовольствием доставим ваш товар прямо
           к вашему подъезду совершенно бесплатно! Ведь
-          мы неплохо заработаем, поднимая его на ваш этаж.
-        </p>
+          мы неплохо заработаем, поднимая его на ваш этаж.</p>
        </section>
       </section>
       <div class="delivery">
        <a href="#">Доставим редкий товар под заказ</a>
       </div>
+
+      <div class="delivery-form">
+        <form action="https://echo.htmlacademy.ru/courses" method="post">
+          <h2>Доставка под заказ</h2>
+
+          <label for="name">Ваше имя:</label>
+          <div class="name-form">
+            <input type="text" id="name" name="name" placeholder="Введите имя">
+          </div>
+
+          <label for="email">Ваш e-mail:</label>
+          <div class="email-form">
+            <input type="email" id="email" name="email" placeholder="Введите E-mail">
+          </div>
+
+          <label for="delivery-items">Что нужно привезти:</label>
+          <div class="delivery-items-form">
+            <input type="text" id="delivery-items" name="delivery-items" placeholder="В свободной форме">
+          </div>
+
+          <label for="amount">Количество:</label>
+          <div class="amount-form">
+            <button class="amount-btn minus" type="button"><span>-</span></button>
+            <input type="text" name="amount" id="amount" value="1">
+            <button class="amount-btn plus" type="button"><span>+</span></button>
+          </div>
+
+          <div class="delivery-form-button">
+            <button type="submit">Отправить</button>
+          </div>
+
+        </form>
+      </div>
+
       <section class="info">
         <h2 class="visually-hidden">Информация</h2>
         <section class="info-about-us">
@@ -211,9 +244,11 @@
       <a href="tel:+78128121212">Тел.: +7 (812) 812-12-12</a>
       <section class="footer-social">
         <h2 class="visually-hidden">Социальные сети</h2>
-        <a class="social" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a>
-        <a class="social" href="https://www.instagram.com/htmlacademy/"><span class="visually-hidden">Instagram</span></a>
-        <a class="social" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Twitter</span></a>
+        <ul class="social-list">
+          <li><a class="social-link" href="https://www.facebook.com/htmlacademy"><span class="visually-hidden">Facebook</span></a></li>
+          <li><a class="social-link" href="https://www.instagram.com/htmlacademy/"><span class="visually-hidden">Instagram</span></a></li>
+          <li><a class="social-link" href="https://twitter.com/htmlacademy_ru"><span class="visually-hidden">Twitter</span></a></li>
+        </ul>
       </section>
       <a href="https://htmlacademy.ru/">
         <img src="#" alt="HTML Academy logo">
